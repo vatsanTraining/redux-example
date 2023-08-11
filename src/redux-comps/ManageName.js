@@ -4,9 +4,9 @@ import ButtonPanel from './ButtonPanel'
 
 const ManageName = () => {
 
-      const firstName  =useSelector( (state) =>state.firstName )
-      const lastName  =useSelector( (state) =>state.lastName )
-      const rating  =useSelector( (state) =>state.rating )
+      const firstName  =useSelector( (state) => state.names.firstName )
+      const lastName  =useSelector( (state) =>state.names.lastName )
+     const rating  =useSelector( (state) =>state.reviews.rating )
 
           const dispatch = useDispatch()
 
