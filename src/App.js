@@ -1,24 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-
+import MyContext from './context-api-example/MyContextProvider';
+import { Provider } from 'react-redux';
+import store from './redux-comps/MyStore';
+import ManageName from './redux-comps/ManageName';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      {/* <MyContext></MyContext> */}
+      <Provider store={store}>
+       <ManageName></ManageName>
+      </Provider>
+          </div>
   );
 }
 
