@@ -4,9 +4,9 @@ import ButtonPanel from './ButtonPanel'
 
 const ManageName = () => {
 
-      const firstName  =useSelector( (state) => state.names.firstName )
-      const lastName  =useSelector( (state) =>state.names.lastName )
-     const rating  =useSelector( (state) =>state.reviews.rating )
+    //   const firstName  =useSelector( (state) => state.names.firstName )
+    //   const lastName  =useSelector( (state) =>state.names.lastName )
+    //  const rating  =useSelector( (state) =>state.reviews.rating )
 
           const dispatch = useDispatch()
 
@@ -32,8 +32,8 @@ const ManageName = () => {
     }
   return (
     <div>
-        {firstName}{lastName}
-        {rating}
+        {/* {firstName}{lastName} */}
+        {/* {rating} */}
         {/* <ButtonPanel changeFirstName={changeFirstName} changeLastName ={changeLastName}></ButtonPanel> */}
       
         <button onClick={changeFirstName}>FirstName</button>
